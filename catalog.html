@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="Style/style.css" />
+	<link rel="stylesheet" href="Style/reset.css" />
+	<link rel="stylesheet" href="Style/catalog.css">
+	<script defer src="Constants/catalog.js"></script>
+</head>
+
+<body>
+	<header>
+		<a href=""><img class="Logo_parfum" src="Content/company `s_logo/Logo_parfum.svg" alt="" /></a>
+		<div class="burger">
+			<div class="main_burger">
+				<img src="Content/icons/iconmonstr-menu-right-lined-48.png" alt="" />
+			</div>
+			<div class="main_burger_list">
+				<a href="index.html">home</a>
+				<a  id="emphasis_on_catalog" href="catalog.html">catalog</a>
+				<a href="/about_as.html">about us</a>
+				<a href="">contact</a>
+			</div>
+		</div>
+		<menu>
+			<a href="index.html">home</a>
+			<a  id="emphasis_on_catalog" href="catalog.html">catalog</a>
+			<a href="/about_as.html">about us</a>
+			<a href="">contact</a>
+		</menu>
+	</header>
+
+<div id="selector">
+	<div class="pop_up_price">Price</div>
+	<div class="selector-dropdown_content">
+		<button id="plus" onclick="sortByPrice(`asc`)">Price (low to high)</button>
+		<button id="minus" onclick="sortByPrice(`desc`)">Price (high to low)</button>
+	</div>
+</div>
+	
+	<div id="catalog"></div>
+
+	<div class="content_center_parfum">
+		<img class="buy_collection" src="Content\content_images\Byu_a_collection.svg" alt="">
+		<p>Buy our entire collection and get a 10% discount on all the following orders.</p>
+		<img class="collection_foto_group" src="Content/content_images/collection_foto_group.svg" alt="">
+		<button class="button_style">Show now</button>
+	</div>
+
+	<footer>
+		<div class="footer_logo">
+			<a href=""><img src="Content/company `s_logo/Logo_parfum.svg" alt="" /></a>
+		</div>
+		<div class="footer_list">
+			<div class="list home">
+				<p>HOME</p>
+				<p> <a href="">History</a></p>
+				<p> <a href="">Contacts</a></p>
+			</div>
+			<div class="list about">
+				<p>ABOUT</p>
+				<p> <a href="">Our story</a></p>
+				<p> <a href="">Our valyes</a></p>
+			</div>
+			<div class="list catalog">
+				<p>CATALOG</p>
+				<p> <a href="">Our parfume</a></p>
+				<p> <a href="">Gift certificates</a></p>
+			</div>
+		</div>
+		<div class="input_block">
+			<p>Sign up to get 10% off your first order</p>
+			<div class="input_interior">
+				<input type="email" name="" id="" />
+				<button class="button_style">Subscribe</button>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>

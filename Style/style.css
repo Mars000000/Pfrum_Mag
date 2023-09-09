@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
+*{
+	font-family: 'Raleway', sans-serif;
+}
+
+:root{
+	--black:rgba(27, 28, 30, 1);
+	--dark_gray:rgba(48, 48, 48, 1);
+	--gray:rgba(77, 77, 77, 1);
+	--light_gray:rgba(102, 102, 102, 1);
+	--white:rgba(255, 255, 255, 1);
+}
+
+body{
+	background-color: var(--black);
+}
+
+header{
+	margin: 80px 80px 0  80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header menu{
+	display: flex;
+	align-items: center;
+	gap: 62px;
+}
+
+#emphasis_on_home,#emphasis_on_catalog,#about_as{
+	font-weight: 700;
+}
+
+
+header menu a{
+	color: var(--white);
+	font-weight: 400;
+}
+
+.Logo_parfum{
+	width: 100px;
+	height: 32px;
+}
+
+.burger{
+	display: none; 
+	position: relative;
+}
+
+.main_burger_list{
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 140px;
+	gap: 40px;
+	position: fixed;
+	top: 0px;
+	right: -60px;
+	background-color: var(--light_gray);
+	width: 70vw;
+	height: 100vh;
+	z-index: 2;
+}
+
+#top{
+	padding-top: 40px;
+}
+
+.main_burger_list a{
+	color: var(--white);
+	margin-top: 7px;
+	font-size: 20px;
+}
+
+.burger:hover  .main_burger_list{
+	display: flex;
+	box-shadow:  -1000px 0px 1000px 10000px rgba(0, 0, 0, 0.788);
+} 
+
+.top_content{
+	display: flex;
+	flex-direction: column;
+	margin: 80px 80px 0  80px;
+
+}
+
+.content_center{
+	display: flex;
+}
+
+.top_logo_txt{
+	position: relative;
+	top: 180px;
+	left: -370px;
+}
+
+.top_logo_txt img{
+	width: 90vw;
+	min-width: 70vw;
+}
+
+.top_logo_txt p{
+	position: relative;
+	left: 120px;
+	color: var(--white);
+	font-size: 20px;
+	background-color: var(--black);
+}
+
+.top_content button{
+	margin-top: 30px;
+	width: 220px;
+	height: 48px;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.history{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+.central_content{
+	display: flex;
+	margin: 120px 80px 0 80px;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
+.central_content img{
+	width: 485px;
+}
+
+.company{
+	display: flex;
+	align-items: center;
+	gap: 45px;
+}
+
+.company h2,p , a{
+	color: var(--white);
+}
+.company p{
+	font-size: 20px;
+}
+
+.spreading{
+	display: flex;
+	margin: 200px 80px 0 80px;
+	align-items: center;
+	gap: 50px;
+	justify-content: space-between;
+}
+
+.spreading_central_foto {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.parfume_center{
+	position: relative;
+	left: -350px;
+	width: 600px;
+}
+
+.follow_up{
+	display: flex;
+	flex-direction: column;
+	max-width: 500px;
+	gap: 30px;
+	margin-right: 200px;
+}
+
+.follow_up p{
+	color: var(--white);
+	font-size: 20px;
+}
+
+.net{
+	display: flex;
+	gap: 14px;
+}
+
+.btn_show_now{
+	margin-top: 30px;
+	margin-left: -354px;
+	width: 220px;
+	height: 48px;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+
+
+footer{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 400px;
+}
+
+.footer_logo a img{
+	width: 230px;
+}
+
+.footer_list{
+	display: flex;
+	gap: 36px;
+}
+
+.list{
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+}
+
+.input_block{
+	display: flex;
+	align-items: center;
+	flex-direction: column;  
+	gap: 35px;  
+}  
+
+.button_style{  
+	transition: .3s;  
+	z-index: 1;  
+}
+
+
+.button_style:hover{
+	scale: 1.05;
+	background-color: var(--black);
+	border: solid 3px var(--white);
+	color: var(--white);
+}
+
+@media (max-width:1200px){
+	.top_content{
+		margin-top:110px;
+		align-items: center;
+	}
+	.content_center{
+		flex-direction: column-reverse;
+		gap: 10px;
+		align-items: center;
+	}
+	.top_logo_txt p{
+		left: 0;
+		height: auto;
+	}
+	.top_logo_txt{
+		top: 0;
+		left: 0;
+	}
+	.central_content{
+		flex-direction: column;
+		gap: 30px;
+	}
+	.history{
+		width: 70%;
+	}
+	.spreading{
+		flex-direction: column-reverse;
+		align-items: center;
+		justify-content: center;
+	}
+	.follow_up{
+		flex-direction: column-reverse;
+		margin: 0;
+	}
+	.parfume_center{
+		left: 0;
+		width: 56vw;
+		min-width: 40vw;
+	}
+	.btn_show_now{
+		margin-left: 0;
+	}
+}
+
+@media (max-width:960px){
+	header{
+		margin: 80px 60px 0  60px;
+	}
+	.top_content{
+		margin: 120px 60px 0  60px;
+		align-items: center;
+	}
+	.burger{
+		display: flex;
+	}
+	header menu{
+		display: none;
+	}
+	.history{
+		width: 100%;
+	}
+	.spreading{
+		margin: 160px 60px 0px 60px;
+	}
+	footer{
+		flex-direction: column;
+	}
+}
+
+@media (max-width:660px){
+	header{
+		margin: 80px 30px 0  30px;
+	}
+	.main_burger_list {
+		right: 0px;
+	}
+	.top_logo_txt{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 7px;
+	}
+	.top_logo_txt p{
+		width: 90%;
+	}
+	.top_logo_txt img{
+		width: 80vw;
+		min-width: 70vw;
+	}
+	.top_content{
+		margin: 80px 30px 0  30px;
+	}
+	.central_content img {
+		width: 80vw;
+	}
+	.central_content {
+		margin: 120px 30px 0 30px;
+	}
+	.company p{
+		font-size: 1rem;
+	}
+	.spreading{
+		margin: 160px 30px 0 30px;
+	}
+	.spreading_central_foto img{
+		width: 90vw;
+	}
+}

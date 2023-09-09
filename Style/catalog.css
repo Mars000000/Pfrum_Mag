@@ -1,0 +1,198 @@
+#selector{
+	position: relative;
+	display: flex;
+	align-items: center;
+	left: 20%;
+	margin-top: 50px;
+}
+
+
+.pop_up_price{
+	font-size: 20px;
+	font-weight: 700;
+	color: var(--white);
+}
+
+.selector-dropdown_content{
+	display: none;
+	position: absolute;
+	left:55px;
+}
+
+
+.selector-dropdown_content button{
+	color: var(--white);
+	background-color: var(--black);
+	padding: 1px 6px;
+	text-decoration: none;
+	display: flex;
+	font-size: 20px;
+	font-weight: 700;
+	transition: .2s;
+}
+
+#selector:hover .selector-dropdown_content{
+	display: flex;
+	gap: 6px;
+	align-items: center;
+}
+
+
+
+
+
+#plus:hover{
+	color: var(--dark_gray);
+	background-color: var(--white);
+}
+#minus:hover{
+	color: var(--dark_gray);
+	background-color: var(--white);
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#catalog{
+	width: 1200px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 50px auto;
+	gap: 15px;
+}
+
+.product{
+	height: 500px;
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	gap: 15px;
+	transition: .3s;
+}
+
+.product:hover{
+	scale: 1.1;
+}
+
+
+.product img{
+	height: 350px;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+.name{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 7px;
+	margin-left: 10px;
+}
+
+.name h3{
+	color: var(--white);
+}
+
+.price_info{
+	display: flex;
+	margin-left: 7px;
+	flex-direction: column;
+	gap: 7px;
+}
+
+.price_info h4{
+	color: var(--white);
+} 
+
+.content_center_parfum{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+	margin-top: 50px;
+}
+
+.buy_collection{
+	width: 60vw;
+}
+
+.content_center_parfum p{
+	font-size: 20px;
+	font-weight: 500;
+	padding: 0  42px 0 42px;
+}
+
+.collection_foto_group{
+	width: 60vw;
+}
+
+.content_center_parfum button{
+	width: 220px;
+    height: 48px;
+    font-size: 20px;
+    font-weight: 600;
+	position: relative;
+}
+
+
+
+@media  (max-width: 1200px){
+	#catalog{
+		width: 900px;
+	}
+	.content_center_parfum button{
+		position: static;
+	}
+	.buy_collection, .collection_foto_group{
+		width: 80vw;
+	}
+}
+
+@media  (max-width: 960px){
+	#catalog{
+		width: 600px;
+	}
+}
+
+@media (max-width:660px){
+	.selector-dropdown_content button{
+		font-size: 1rem;
+	}
+	.pop_up_price{
+		font-size: 1rem;
+	}
+	#selector{
+		left: 8%;
+	}
+	#catalog{
+		width: 350px;
+	}
+}
