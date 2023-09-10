@@ -146,16 +146,3 @@ function sortByPrice(value) {
 }
 
 showProducts(products);
-
-/* 
-	Am schimbat pretu produselor din string in int si am adaugat simbolul $ l-am adaugat la afisare
-*/
-/* 
-	Am creat o functie care afiseaza produsele pentru a o folosi cind avem nevoie
-*/
-/* 
-	Am creat functia de ordonare dupa pret si am chemato din html cu ajutorul evenimentului onclik
-*/
-/* 
-	Examineaza codul, daca ai intrebari adreseaza-te :)
-*/
